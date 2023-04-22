@@ -30,11 +30,10 @@
                 https://startingelectronics.org/tutorials/arduino/ethernet-shield-web-server-tutorial/SD-card-AJAX-web-server/
                 - NMEAParser Library from https://reference.arduino.cc/reference/en/libraries/nmeaparser/
   Date:         27 October 2022
-
+  Last Modified: 22 April 2023
        
   Author:       H.S. Moghaddam
                 h.seyedzadegan@gmail.com
-  Last Modified: 22 April 2023
 --------------------------------------------------------------*/
 
 #include <SPI.h>
