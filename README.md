@@ -1,7 +1,7 @@
 # ShipQiblahCompass
 ##### This project can provide Qiblah directions at open sea on ship
 
-By using this hardware you can give Gyro and GPS NMEA signals and caculate simultaneously qiblah direction and shows it on any client where connected to local network on ship.
+By using this hardware, you can receive Gyro and GPS NMEA signals and calculate the qiblah direction simultaneously and show it on any client that is connected to the local network on the ship.
 
 Hardware: Arduino UNO, Arduino Ethernet Shield, RS422 To TTL Converter
 ### Usage: 
