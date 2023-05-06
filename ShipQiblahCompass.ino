@@ -113,12 +113,12 @@ void setup()
         return;    // init failed
     }
     Serial.println("SUCCESS - SD card initialized.");
-    // check for index13.htm file
+    // check for index.htm file
     if (!SD.exists("index.htm")) {
-        Serial.println("ERROR - Can't find index13.htm file!");
+        Serial.println("ERROR - Can't find index.htm file!");
         return;  // can't find index file
     }
-    Serial.println("SUCCESS - Found index13.htm file.");
+    Serial.println("SUCCESS - Found index.htm file.");
     pinMode(7, INPUT);        // switch is attached to Arduino pin 3
 
     mySerial.begin(9600);
