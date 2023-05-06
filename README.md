@@ -10,4 +10,7 @@ Hardware: Arduino UNO, Arduino Ethernet Shield, RS422 To TTL Converter
 3. Connect ethernet shield to ship's local network switch.
 4. Browse desired ip that you set in ino file for ethernet shield. In this file used 192.168.1.120
 
+#### Test Video: 
+[See on YouTube](https://youtu.be/QEIn0vujR9M)
+
 Thanks to [artarya](https://github.com/artarya)
