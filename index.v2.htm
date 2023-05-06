@@ -1,0 +1,1339 @@
+<!-- This is about Ship Qiblah COmpass -->
+<!DOCTYPE html>
+
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    * {
+      box-sizing: border-box;
+
+    }
+
+    body {
+      animation-name: clock-animation;
+      /* width: 100vh;
+      height: 100vh; */
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      overflow-x: hidden;
+      font-family: cursive;
+      padding: 0;
+      margin: 0;
+    }
+
+
+    .header {
+      height: 60px;
+      padding: 10px;
+      background-color: #ccc;
+      color: #fff;
+      font-size: 24px;
+      width: 100%;
+    }
+
+
+    @keyframes clock-animation {
+      0% {
+        background: #3e5afb;
+
+
+      }
+
+      50% {
+        background: #3e5;
+
+      }
+
+      100% {
+        background: yellow;
+      }
+    }
+
+    .clock-container {
+      /* width: 350px;
+      height: 350px;
+      border: 6px solid green;
+      border-radius: 50%;
+      position: relative;
+      background: #fff; */
+      height: 350px;
+      width: 350px;
+      position: relative;
+      display: flex;
+      margin: 0 auto;
+      margin-top: 50px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    }
+
+    /* .clock-container::after {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: green;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    } */
+
+    .clock-number {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+
+    .clock-number:after {
+      content: "";
+      position: absolute;
+      height: 13px;
+      width: 3px;
+      top: 13%;
+      background: #000;
+
+    }
+
+    .clock-number>div {
+      padding: 12px;
+    }
+
+    .num1 {
+      transform: rotate(30deg)
+    }
+
+    .num1>div {
+      transform: rotate(-30deg)
+    }
+
+    .num2 {
+      transform: rotate(60deg)
+    }
+
+    .num2>div {
+      transform: rotate(-60deg)
+    }
+
+    .num3 {
+      transform: rotate(90deg)
+    }
+
+    .num3>div {
+      transform: rotate(-90deg)
+    }
+
+    .num4 {
+      transform: rotate(120deg)
+    }
+
+    .num4>div {
+      transform: rotate(-120deg)
+    }
+
+    .num5 {
+      transform: rotate(150deg)
+    }
+
+    .num5>div {
+      transform: rotate(-150deg)
+    }
+
+    .num6 {
+      transform: rotate(180deg)
+    }
+
+    .num6>div {
+      transform: rotate(-180deg)
+    }
+
+    .num7 {
+      transform: rotate(210deg)
+    }
+
+    .num7>div {
+      transform: rotate(-210deg)
+    }
+
+    .num8 {
+      transform: rotate(240deg)
+    }
+
+    .num8>div {
+      transform: rotate(-240deg)
+    }
+
+    .num9 {
+      transform: rotate(270deg)
+    }
+
+    .num9>div {
+      transform: rotate(-270deg)
+    }
+
+    .num10 {
+      transform: rotate(300deg)
+    }
+
+    .num10>div {
+      transform: rotate(-300deg)
+    }
+
+    .num11 {
+      transform: rotate(330deg)
+    }
+
+    .num11>div {
+      transform: rotate(-330deg)
+    }
+
+    .num12 {
+      transform: rotate(360deg)
+    }
+
+    .num12>div {
+      transform: rotate(-360deg)
+    }
+
+    .clock-hand {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    .clock-hand>div {
+      left: 50%;
+      bottom: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      border-radius: 12px;
+    }
+
+    .mecca-png {
+      left: 50%;
+      bottom: 77%;
+      transform: translateX(-50%);
+      position: absolute;
+      border-radius: 2px;
+    }
+
+    .minute-hand {
+      height: 25%;
+      width: 4px;
+      background: #000;
+    }
+
+    .second-hand::after {
+
+      position: absolute;
+      content: "";
+      border-style: solid;
+      border-width: 4px;
+      border-color: transparent transparent purple transparent;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -6%;
+
+    }
+
+    .current-qiblah {
+      position: absolute;
+      font-size: 12px;
+      font-weight: bold;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 25%;
+    }
+
+    .current-seconds {
+      position: absolute;
+      font-size: 12px;
+      font-weight: bold;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 25%;
+      background: black;
+      color: #fff;
+      padding: 4px;
+    }
+
+    .oghat-container {
+      margin-top: 20px !important;
+      border-radius: 44px;
+      background-color: rgb(245, 245, 245);
+      box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.35);
+      display: block;
+      width: 80%;
+      min-height: 300px;
+      margin: 0 auto;
+      direction: rtl;
+      font-family: "b homa";
+      color: blue;
+      padding: 10px;
+    }
+
+    .oghat-header {
+
+      font-size: 1.9rem;
+      font-family: "B Titr";
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      line-height: 1;
+      text-align: center;
+
+      padding: 5px;
+    }
+
+    .oghat-main {
+      max-width: 100%;
+      margin: 0 auto;
+      display: grid;
+      gap: 1rem;
+      padding: 10px;
+    }
+ .oghat-main .item2 div,.oghat-main .item3 div {
+ display: grid;
+ grid-template-columns: 150px 100px;
+ }
+ .oghat-main .item2 div span:nth-child(2),.oghat-main .item3 div span:nth-child(2){
+
+ color:#008634
+ }
+
+    @media (max-width: 600px) {
+      .oghat-main {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .clock-container {
+
+        height: 250px;
+        width: 250px;
+
+
+      }
+    }
+
+    @media (min-width: 900px) {
+      .oghat-main {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+
+    select {
+
+      /* styling */
+      background-color: white;
+      border: thin solid blue;
+      border-radius: 4px;
+
+      font: inherit;
+      line-height: 1.5em;
+      padding: 0.5em 3.5em 0.5em 1em;
+
+      /* reset */
+      width: 80%;
+      margin: 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+
+    }
+
+    /* arrows */
+
+    select.classic {
+      background-image:
+        linear-gradient(45deg, transparent 50%, blue 50%),
+        linear-gradient(135deg, blue 50%, transparent 50%),
+        linear-gradient(to right, skyblue, skyblue);
+      background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        100% 0;
+      background-size:
+        5px 5px,
+        5px 5px,
+        2.5em 2.5em;
+      background-repeat: no-repeat;
+    }
+
+    select.classic:focus {
+      background-image:
+        linear-gradient(45deg, white 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, white 50%),
+        linear-gradient(to right, gray, gray);
+      background-position:
+        calc(100% - 15px) 1em,
+        calc(100% - 20px) 1em,
+        100% 0;
+      background-size:
+        5px 5px,
+        5px 5px,
+        2.5em 2.5em;
+      background-repeat: no-repeat;
+      border-color: grey;
+      outline: 0;
+    }
+
+    .select-items {
+      position: absolute;
+      background-color: #d7ffda;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      color: #000;
+      padding: 8px 16px;
+      border: 1px solid transparent;
+      border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    }
+
+
+
+    .yes-no-container label {
+      display: inline-block;
+      cursor: pointer;
+      padding: 10px 20px;
+      font-size: 18px;
+      text-align: center;
+      color: #fff;
+      background-color: #337ab7;
+      border-radius: 4px;
+      border: none;
+      margin-right: 10px;
+    }
+
+    .yes-no-container label:hover {
+      background-color: #23527c;
+    }
+
+    .yes-no-container input[type="radio"] {
+      display: none;
+    }
+
+    .yes-no-container input[type="radio"]:checked+label {
+      background-color: #23527c;
+    }
+
+    .yes-no-container label::active,
+    .yes-no-container label::focus {
+      background-color: #ff5555;
+    }
+
+
+    /* ////////////////////expand///////////// */
+
+    .expand-button {
+      border: none;
+      background-color: #1b7e5c;
+      color: white;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      font-family: inherit;
+    }
+
+    .expand-button:hover {
+      background-color: #00b17c;
+    }
+
+    .expandable {
+      overflow: hidden;
+      height: 0;
+      transition: height 0.5s ease;
+
+      display: gird;
+      grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .expanded {
+      height: 100px !important;
+      transition: height 0.5s ease;
+    }
+
+    .collapsed {
+      height: 0;
+    }
+  </style>
+</head>
+
+<body onload="GetSwitchState()">
+  <div class="header">
+    <div class="yes-no-container">
+      <label>
+        <input type="radio" name="yes-no" value="fa" id="fa-input">
+        Fa
+      </label>
+      <label>
+        <input type="radio" name="yes-no" value="no" id="en-input">
+        En
+      </label>
+    </div>
+
+  </div>
+  <div>
+
+    <div class="clock-container">
+      <div class="current-qibla">
+
+      </div>
+      <div class="clock-number num1">
+        <div>1</div>
+      </div>
+      <div class="clock-number num2">
+        <div>2</div>
+      </div>
+      <div class="clock-number num3">
+        <div>3</div>
+      </div>
+      <div class="clock-number num4">
+        <div>4</div>
+      </div>
+      <div class="clock-number num5">
+        <div>5</div>
+      </div>
+      <div class="clock-number num6">
+        <div>6</div>
+      </div>
+      <div class="clock-number num7">
+        <div>7</div>
+      </div>
+      <div class="clock-number num8">
+        <div>8</div>
+      </div>
+      <div class="clock-number num9">
+        <div>9</div>
+      </div>
+      <div class="clock-number num10">
+        <div>10</div>
+      </div>
+      <div class="clock-number num11">
+        <div>11</div>
+      </div>
+      <div class="clock-number num12">
+        <div>12</div>
+      </div>
+      <div class="clock-hand" id="sec">
+        <div class="second-hand"></div>
+      </div>
+      <div class="clock-hand" id="min">
+        <div class="minute-hand"></div>
+        <img class="mecca-png" src="mecca.png" width="40px" alt="">
+
+      </div>
+      <div class="clock-hand" id="hr">
+        <div class="hour-hand"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="oghat-container">
+    <div class="oghat-header">
+      <p style="color:#3e5afb">اوقات شرعی</p>
+    </div>
+    <!-- /* ////////////////////expand///////////// */ -->
+
+    <button class="expand-button" onclick="toggleExpand()">تعیین نوع محاسبه اذان </button>
+    <div class="expandable" id="myDiv">
+      <div style="text-align: center;">
+        <div style="color:green">تعیین نوع محاسبه اذان</div>
+        <select class="classic" id="sts">
+          <option class="select-items" value="Tehran">موسسه ژئوفیزیک دانشگاه تهران(صدا و سیما)</option>
+          <option class="select-items" value="Egypt">مرکز مطالعات مصر</option>
+          <option class="select-items" value="Makkah">ام اقرا مکه</option>
+          <option class="select-items" value="MWL">باشگاه مسلمانان دنیا</option>
+          <option class="select-items" value="Jafari">موسسه لواء قم</option>
+          <option class="select-items" value="Karachi">دانشگاه علوم اسلامی کراچی</option>
+          <option class="select-items" value="ISNA">جامعه اسلامی شمال آمریکا</option>
+        </select>
+      </div>
+
+
+    </div>
+
+    <div class="oghat-main">
+      <!-- <div class="item1">
+          <select class="classic">
+            <option class="select-items" value="">موسسه ژئوفیزیک دانشگاه تهران(صدا و سیما)</option>
+            <option class="select-items">مرکز مطالعات مصر</option>
+            <option class="select-items">ام اقرا مکه</option>
+            <option class="select-items" value="">باشگاه مسلمانان دنیا</option>
+            <option  class="select-items" value="">موسسه لواء قوم</option>
+            <option class="select-items" value="">دانشگاه علوم اسلامی کراچی</option>
+            <option class="select-items" value="">جامعه اسلامی شمال آمریکا</option>
+          </select>
+      
+        </div> -->
+      <div class="item2">
+        <div>
+          <span>
+            اذان صبح: &nbsp;
+          </span>
+          <span id="Fajr"></span>
+        </div>
+        <div>
+          <span>
+            طلوع خورشید: &nbsp;
+          </span>
+          <span id="Sunrise"></span>
+        </div>
+        <div>
+          <span>
+          اذان ظهر: &nbsp;
+          </span>
+          <span id="Dhuhr"></span>
+        </div>
+      </div>
+      <div class="item3">
+        <div>
+          <span>
+           اذان عصر &nbsp;
+          </span>
+          <span id="Asr"></span>
+        </div>
+        <div>
+          <span>
+           اذان مغرب: &nbsp;
+          </span>
+          <span id="Maghrib"></span>
+        </div>
+        <div>
+          <span>
+          نیمه شب شرعی: &nbsp;
+          </span>
+          <span id="Midnight"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <script type="text/javascript" src="PrayTimes.js"></script> -->
+
+  <script>
+
+    //////////////////////////////////expandJS
+
+    function toggleExpand() {
+      var element = document.getElementById("myDiv");
+      var isExpanded = element.classList.contains("expanded");
+
+      if (isExpanded) {
+        element.classList.remove("expanded");
+        element.classList.add("collapsed");
+      } else {
+        element.classList.remove("collapsed");
+        element.classList.add("expanded");
+      }
+    }
+
+    /////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+    const yesInput = document.getElementById("fa-input");
+    const yesLabel = yesInput.parentNode;
+
+    yesInput.addEventListener("click", function () {
+      noLabel.style.backgroundColor = "#23527c";
+
+      yesLabel.style.backgroundColor = "#ff9900";
+    });
+
+    const noInput = document.getElementById("en-input");
+    const noLabel = noInput.parentNode;
+
+    noInput.addEventListener("click", function () {
+      yesLabel.style.backgroundColor = "#23527c";
+      noLabel.style.backgroundColor = "#ff9900";
+    });
+
+
+
+
+
+
+
+
+
+
+
+    //----------------------- PrayTimes Class ------------------------
+
+
+    function PrayTimes(method) {
+
+
+      //------------------------ Constants --------------------------
+      var
+
+        // Time Names
+        timeNames = {
+          imsak: 'Imsak',
+          fajr: 'Fajr',
+          sunrise: 'Sunrise',
+          dhuhr: 'Dhuhr',
+          asr: 'Asr',
+          sunset: 'Sunset',
+          maghrib: 'Maghrib',
+          isha: 'Isha',
+          midnight: 'Midnight'
+        },
+
+
+        // Calculation Methods
+        methods = {
+          MWL: {
+            name: 'Muslim World League',
+            params: { fajr: 18, isha: 17 }
+          },
+          ISNA: {
+            name: 'Islamic Society of North America (ISNA)',
+            params: { fajr: 15, isha: 15 }
+          },
+          Egypt: {
+            name: 'Egyptian General Authority of Survey',
+            params: { fajr: 19.5, isha: 17.5 }
+          },
+          Makkah: {
+            name: 'Umm Al-Qura University, Makkah',
+            params: { fajr: 18.5, isha: '90 min' }
+          },  // fajr was 19 degrees before 1430 hijri
+          Karachi: {
+            name: 'University of Islamic Sciences, Karachi',
+            params: { fajr: 18, isha: 18 }
+          },
+          Tehran: {
+            name: 'Institute of Geophysics, University of Tehran',
+            params: { fajr: 17.7, isha: 14, maghrib: 4.5, midnight: 'Jafari' }
+          },  // isha is not explicitly specified in this method
+          Jafari: {
+            name: 'Shia Ithna-Ashari, Leva Institute, Qum',
+            params: { fajr: 16, isha: 14, maghrib: 4, midnight: 'Jafari' }
+          }
+        },
+
+
+        // Default Parameters in Calculation Methods
+        defaultParams = {
+          maghrib: '0 min', midnight: 'Standard'
+
+        },
+
+
+        //----------------------- Parameter Values ----------------------
+        /*
+        
+        // Asr Juristic Methods
+        asrJuristics = [
+          'Standard',    // Shafi`i, Maliki, Ja`fari, Hanbali
+          'Hanafi'       // Hanafi
+        ],
+        
+        
+        // Midnight Mode
+        midnightMethods = [
+          'Standard',    // Mid Sunset to Sunrise
+          'Jafari'       // Mid Sunset to Fajr
+        ],
+        
+        
+        // Adjust Methods for Higher Latitudes
+        highLatMethods = [
+          'NightMiddle', // middle of night
+          'AngleBased',  // angle/60th of night
+          'OneSeventh',  // 1/7th of night
+          'None'         // No adjustment
+        ],
+        
+        
+        // Time Formats
+        timeFormats = [
+          '24h',         // 24-hour format
+          '12h',         // 12-hour format
+          '12hNS',       // 12-hour format with no suffix
+          'Float'        // floating point number
+        ],
+        */
+
+
+        //---------------------- Default Settings --------------------
+
+        calcMethod = 'MWL',
+
+        // do not change anything here; use adjust method instead
+        setting = {
+          imsak: '10 min',
+          dhuhr: '0 min',
+          asr: 'Standard',
+          highLats: 'NightMiddle'
+        },
+
+        timeFormat = '24h',
+        timeSuffixes = ['am', 'pm'],
+        invalidTime = '-----',
+
+        numIterations = 1,
+        offset = {},
+
+
+        //----------------------- Local Variables ---------------------
+
+        lat, lng, elv,       // coordinates
+        timeZone, jDate;     // time variables
+
+
+      //---------------------- Initialization -----------------------
+
+
+      // set methods defaults
+      var defParams = defaultParams;
+      for (var i in methods) {
+        var params = methods[i].params;
+        for (var j in defParams)
+          if ((typeof (params[j]) == 'undefined'))
+            params[j] = defParams[j];
+      };
+
+      // initialize settings
+      calcMethod = methods[method] ? method : calcMethod;
+      var params = methods[calcMethod].params;
+      for (var id in params)
+        setting[id] = params[id];
+
+      // init time offsets
+      for (var i in timeNames)
+        offset[i] = 0;
+
+
+
+      //----------------------- Public Functions ------------------------
+      return {
+
+
+        // set calculation method
+        setMethod: function (method) {
+          if (methods[method]) {
+            this.adjust(methods[method].params);
+            calcMethod = method;
+          }
+        },
+
+
+        // set calculating parameters
+        adjust: function (params) {
+          for (var id in params)
+            setting[id] = params[id];
+        },
+
+
+        // set time offsets
+        tune: function (timeOffsets) {
+          for (var i in timeOffsets)
+            offset[i] = timeOffsets[i];
+        },
+
+
+        // get current calculation method
+        getMethod: function () { return calcMethod; },
+
+        // get current setting
+        getSetting: function () { return setting; },
+
+        // get current time offsets
+        getOffsets: function () { return offset; },
+
+        // get default calc parametrs
+        getDefaults: function () { return methods; },
+
+
+        // return prayer times for a given date
+        getTimes: function (date, coords, timezone, dst, format) {
+          lat = 1 * coords[0];
+          lng = 1 * coords[1];
+          elv = coords[2] ? 1 * coords[2] : 0;
+          timeFormat = format || timeFormat;
+          if (date.constructor === Date)
+            date = [date.getFullYear(), date.getMonth() + 1, date.getDate()];
+          if (typeof (timezone) == 'undefined' || timezone == 'auto')
+            timezone = this.getTimeZone(date);
+          if (typeof (dst) == 'undefined' || dst == 'auto')
+            dst = this.getDst(date);
+          timeZone = 1 * timezone + (1 * dst ? 1 : 0);
+          jDate = this.julian(date[0], date[1], date[2]) - lng / (15 * 24);
+
+          return this.computeTimes();
+        },
+
+
+        // convert float time to the given format (see timeFormats)
+        getFormattedTime: function (time, format, suffixes) {
+          if (isNaN(time))
+            return invalidTime;
+          if (format == 'Float') return time;
+          suffixes = suffixes || timeSuffixes;
+
+          time = DMath.fixHour(time + 0.5 / 60);  // add 0.5 minutes to round
+          var hours = Math.floor(time);
+          var minutes = Math.floor((time - hours) * 60);
+          var suffix = (format == '12h') ? suffixes[hours < 12 ? 0 : 1] : '';
+          var hour = (format == '24h') ? this.twoDigitsFormat(hours) : ((hours + 12 - 1) % 12 + 1);
+          return hour + ':' + this.twoDigitsFormat(minutes) + (suffix ? ' ' + suffix : '');
+        },
+
+
+        //---------------------- Calculation Functions -----------------------
+
+
+        // compute mid-day time
+        midDay: function (time) {
+          var eqt = this.sunPosition(jDate + time).equation;
+          var noon = DMath.fixHour(12 - eqt);
+          return noon;
+        },
+
+
+        // compute the time at which sun reaches a specific angle below horizon
+        sunAngleTime: function (angle, time, direction) {
+          var decl = this.sunPosition(jDate + time).declination;
+          var noon = this.midDay(time);
+          var t = 1 / 15 * DMath.arccos((-DMath.sin(angle) - DMath.sin(decl) * DMath.sin(lat)) /
+            (DMath.cos(decl) * DMath.cos(lat)));
+          return noon + (direction == 'ccw' ? -t : t);
+        },
+
+
+        // compute asr time
+        asrTime: function (factor, time) {
+          var decl = this.sunPosition(jDate + time).declination;
+          var angle = -DMath.arccot(factor + DMath.tan(Math.abs(lat - decl)));
+          return this.sunAngleTime(angle, time);
+        },
+
+
+        // compute declination angle of sun and equation of time
+        // Ref: http://aa.usno.navy.mil/faq/docs/SunApprox.php
+        sunPosition: function (jd) {
+          var D = jd - 2451545.0;
+          var g = DMath.fixAngle(357.529 + 0.98560028 * D);
+          var q = DMath.fixAngle(280.459 + 0.98564736 * D);
+          var L = DMath.fixAngle(q + 1.915 * DMath.sin(g) + 0.020 * DMath.sin(2 * g));
+
+          var R = 1.00014 - 0.01671 * DMath.cos(g) - 0.00014 * DMath.cos(2 * g);
+          var e = 23.439 - 0.00000036 * D;
+
+          var RA = DMath.arctan2(DMath.cos(e) * DMath.sin(L), DMath.cos(L)) / 15;
+          var eqt = q / 15 - DMath.fixHour(RA);
+          var decl = DMath.arcsin(DMath.sin(e) * DMath.sin(L));
+
+          return { declination: decl, equation: eqt };
+        },
+
+
+        // convert Gregorian date to Julian day
+        // Ref: Astronomical Algorithms by Jean Meeus
+        julian: function (year, month, day) {
+          if (month <= 2) {
+            year -= 1;
+            month += 12;
+          };
+          var A = Math.floor(year / 100);
+          var B = 2 - A + Math.floor(A / 4);
+
+          var JD = Math.floor(365.25 * (year + 4716)) + Math.floor(30.6001 * (month + 1)) + day + B - 1524.5;
+          return JD;
+        },
+
+
+        //---------------------- Compute Prayer Times -----------------------
+
+
+        // compute prayer times at given julian date
+        computePrayerTimes: function (times) {
+          times = this.dayPortion(times);
+          var params = setting;
+
+          var imsak = this.sunAngleTime(this.eval(params.imsak), times.imsak, 'ccw');
+          var fajr = this.sunAngleTime(this.eval(params.fajr), times.fajr, 'ccw');
+          var sunrise = this.sunAngleTime(this.riseSetAngle(), times.sunrise, 'ccw');
+          var dhuhr = this.midDay(times.dhuhr);
+          var asr = this.asrTime(this.asrFactor(params.asr), times.asr);
+          var sunset = this.sunAngleTime(this.riseSetAngle(), times.sunset);;
+          var maghrib = this.sunAngleTime(this.eval(params.maghrib), times.maghrib);
+          var isha = this.sunAngleTime(this.eval(params.isha), times.isha);
+
+          return {
+            imsak: imsak, fajr: fajr, sunrise: sunrise, dhuhr: dhuhr,
+            asr: asr, sunset: sunset, maghrib: maghrib, isha: isha
+          };
+        },
+
+
+        // compute prayer times
+        computeTimes: function () {
+          // default times
+          var times = {
+            imsak: 5, fajr: 5, sunrise: 6, dhuhr: 12,
+            asr: 13, sunset: 18, maghrib: 18, isha: 18
+          };
+
+          // main iterations
+          for (var i = 1; i <= numIterations; i++)
+            times = this.computePrayerTimes(times);
+
+          times = this.adjustTimes(times);
+
+          // add midnight time
+          times.midnight = (setting.midnight == 'Jafari') ?
+            times.sunset + this.timeDiff(times.sunset, times.fajr) / 2 :
+            times.sunset + this.timeDiff(times.sunset, times.sunrise) / 2;
+
+          times = this.tuneTimes(times);
+          return this.modifyFormats(times);
+        },
+
+
+        // adjust times
+        adjustTimes: function (times) {
+          var params = setting;
+          for (var i in times)
+            times[i] += timeZone - lng / 15;
+
+          if (params.highLats != 'None')
+            times = this.adjustHighLats(times);
+
+          if (this.isMin(params.imsak))
+            times.imsak = times.fajr - this.eval(params.imsak) / 60;
+          if (this.isMin(params.maghrib))
+            times.maghrib = times.sunset + this.eval(params.maghrib) / 60;
+          if (this.isMin(params.isha))
+            times.isha = times.maghrib + this.eval(params.isha) / 60;
+          times.dhuhr += this.eval(params.dhuhr) / 60;
+
+          return times;
+        },
+
+
+        // get asr shadow factor
+        asrFactor: function (asrParam) {
+          var factor = { Standard: 1, Hanafi: 2 }[asrParam];
+          return factor || this.eval(asrParam);
+        },
+
+
+        // return sun angle for sunset/sunrise
+        riseSetAngle: function () {
+          //var earthRad = 6371009; // in meters
+          //var angle = DMath.arccos(earthRad/(earthRad+ elv));
+          var angle = 0.0347 * Math.sqrt(elv); // an approximation
+          return 0.833 + angle;
+        },
+
+
+        // apply offsets to the times
+        tuneTimes: function (times) {
+          for (var i in times)
+            times[i] += offset[i] / 60;
+          return times;
+        },
+
+
+        // convert times to given time format
+        modifyFormats: function (times) {
+          for (var i in times)
+            times[i] = this.getFormattedTime(times[i], timeFormat);
+          return times;
+        },
+
+
+        // adjust times for locations in higher latitudes
+        adjustHighLats: function (times) {
+          var params = setting;
+          var nightTime = this.timeDiff(times.sunset, times.sunrise);
+
+          times.imsak = this.adjustHLTime(times.imsak, times.sunrise, this.eval(params.imsak), nightTime, 'ccw');
+          times.fajr = this.adjustHLTime(times.fajr, times.sunrise, this.eval(params.fajr), nightTime, 'ccw');
+          times.isha = this.adjustHLTime(times.isha, times.sunset, this.eval(params.isha), nightTime);
+          times.maghrib = this.adjustHLTime(times.maghrib, times.sunset, this.eval(params.maghrib), nightTime);
+
+          return times;
+        },
+
+
+        // adjust a time for higher latitudes
+        adjustHLTime: function (time, base, angle, night, direction) {
+          var portion = this.nightPortion(angle, night);
+          var timeDiff = (direction == 'ccw') ?
+            this.timeDiff(time, base) :
+            this.timeDiff(base, time);
+          if (isNaN(time) || timeDiff > portion)
+            time = base + (direction == 'ccw' ? -portion : portion);
+          return time;
+        },
+
+
+        // the night portion used for adjusting times in higher latitudes
+        nightPortion: function (angle, night) {
+          var method = setting.highLats;
+          var portion = 1 / 2 // MidNight
+          if (method == 'AngleBased')
+            portion = 1 / 60 * angle;
+          if (method == 'OneSeventh')
+            portion = 1 / 7;
+          return portion * night;
+        },
+
+
+        // convert hours to day portions
+        dayPortion: function (times) {
+          for (var i in times)
+            times[i] /= 24;
+          return times;
+        },
+
+
+        //---------------------- Time Zone Functions -----------------------
+
+
+        // get local time zone
+        getTimeZone: function (date) {
+          var year = date[0];
+          var t1 = this.gmtOffset([year, 0, 1]);
+          var t2 = this.gmtOffset([year, 6, 1]);
+          return Math.min(t1, t2);
+        },
+
+
+        // get daylight saving for a given date
+        getDst: function (date) {
+          return 1 * (this.gmtOffset(date) != this.getTimeZone(date));
+        },
+
+
+        // GMT offset for a given date
+        gmtOffset: function (date) {
+          var localDate = new Date(date[0], date[1] - 1, date[2], 12, 0, 0, 0);
+          var GMTString = localDate.toGMTString();
+          var GMTDate = new Date(GMTString.substring(0, GMTString.lastIndexOf(' ') - 1));
+          var hoursDiff = (localDate - GMTDate) / (1000 * 60 * 60);
+          return hoursDiff;
+        },
+
+
+        //---------------------- Misc Functions -----------------------
+
+        // convert given string into a number
+        eval: function (str) {
+          return 1 * (str + '').split(/[^0-9.+-]/)[0];
+        },
+
+
+        // detect if input contains 'min'
+        isMin: function (arg) {
+          return (arg + '').indexOf('min') != -1;
+        },
+
+
+        // compute the difference between two times
+        timeDiff: function (time1, time2) {
+          return DMath.fixHour(time2 - time1);
+        },
+
+
+        // add a leading 0 if necessary
+        twoDigitsFormat: function (num) {
+          return (num < 10) ? '0' + num : num;
+        }
+
+      }
+    }
+
+
+
+    //---------------------- Degree-Based Math Class -----------------------
+
+
+    var DMath = {
+
+      dtr: function (d) { return (d * Math.PI) / 180.0; },
+      rtd: function (r) { return (r * 180.0) / Math.PI; },
+
+      sin: function (d) { return Math.sin(this.dtr(d)); },
+      cos: function (d) { return Math.cos(this.dtr(d)); },
+      tan: function (d) { return Math.tan(this.dtr(d)); },
+
+      arcsin: function (d) { return this.rtd(Math.asin(d)); },
+      arccos: function (d) { return this.rtd(Math.acos(d)); },
+      arctan: function (d) { return this.rtd(Math.atan(d)); },
+
+      arccot: function (x) { return this.rtd(Math.atan(1 / x)); },
+      arctan2: function (y, x) { return this.rtd(Math.atan2(y, x)); },
+
+      fixAngle: function (a) { return this.fix(a, 360); },
+      fixHour: function (a) { return this.fix(a, 24); },
+
+      fix: function (a, b) {
+        a = a - b * (Math.floor(a / b));
+        return (a < 0) ? a + b : a;
+      }
+    }
+
+
+    //---------------------- Init Object -----------------------
+
+
+    var prayTimes = new PrayTimes();
+
+
+
+
+
+
+
+
+
+    var b = 15;
+
+    function GetSwitchState() {
+      nocache = "&nocache=" + Math.random() * 1000000;
+      var request = new XMLHttpRequest();
+      request.onreadystatechange = function () {
+        if (this.readyState == 4) {
+          if (this.status == 200) {
+            if (this.responseText != null) {
+              b = parseInt(this.responseText);
+            }
+          }
+        }
+      }
+      request.open("GET", "ajax_switch" + nocache, true);
+      request.send(null);
+      setTimeout('GetSwitchState()', 1000);
+    }
+
+
+
+    let secondHand = document.querySelector("#sec");
+    let minHand = document.querySelector("#min")
+    let hourHand = document.querySelector("#hr")
+
+
+    setInterval(clockRotating, 1000)
+
+    function clockRotating() {
+
+      var date = new Date();
+      var getqiblah = b;
+
+
+
+      minHand.style.transform = "rotate(" + b + "deg)"
+    }
+
+    /////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var sts = document.getElementById("sts").options[document.getElementById("sts").selectedIndex].value;
+
+      var date = new Date(); // today 36.288443, 59.619068
+      var times = prayTimes.getTimes(date, [36,59],3.5,"24h");
+      prayTimes.setMethod(sts);
+
+      // var list = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Midnight'];
+      var list = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib',  'Midnight'];
+
+
+      for (var i in list) {
+
+        document.getElementById(list[i]).textContent = times[list[i].toLowerCase()];
+
+        console.log(list[i],times[list[i].toLowerCase()]);
+      }
+      document.getElementById("sts").addEventListener("change", function () {
+        var sts = document.getElementById("sts").options[document.getElementById("sts").selectedIndex].value;
+
+
+  var date = new Date(); // today 36.288443, 59.619068
+      var times = prayTimes.getTimes(date, [36,59],3.5,"24h");
+      prayTimes.setMethod(sts);
+
+      // var list = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Midnight'];
+      var list = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib',  'Midnight'];
+
+
+      for (var i in list) {
+
+        document.getElementById(list[i]).textContent = times[list[i].toLowerCase()];
+
+        console.log(list[i],times[list[i].toLowerCase()]);
+      }
+
+
+      });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+  <!-- <script src="js/main.js"></script>  -->
+</body>
+
+</html>

@@ -213,8 +213,9 @@ void ethernetProvider(){
 void GetSwitchState(EthernetClient cl)
 {
    double qqq = qiblahCompasser();
-   qiblahL = String(qqq>0 ? qqq : qqq+180);
-   cl.println(qiblahL);
+   double tHeading = double(arg0);
+   qqq = qqq>0 ? qqq : qqq+180;
+   cl.println(String(qqq>tHeading ? qqq - tHeading : 360 - tHeading + qqq));
 }
 
 // sets every element of str to 0 (clears array)

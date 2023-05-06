@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>قبله‌نما</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.qibla {
+			background: url('https://www.islamicfinder.org/compass/compass.gif') no-repeat center;
+			height: 200px;
+			width: 200px;
+			position: relative;
+			display: block;
+			margin: auto;
+			margin-top: 50px;
+			border-radius: 50%;
+			border: 2px solid #fff;
+			box-shadow: 0 0 10px rgba(0,0,0,0.5);
+		}
+		.pointer {
+			background: #f00;
+			height: 50px;
+			width: 4px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform-origin: top;
+			transform: rotate(-45deg);
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0,0,0,0.5);
+		}
+	</style>
+</head>
+<body>
+	<div class="qibla">
+		<div class="pointer"></div>
+	</div>
+</body>
+</html>
