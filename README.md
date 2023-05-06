@@ -13,4 +13,5 @@ Hardware: Arduino UNO, Arduino Ethernet Shield, RS422 To TTL Converter
 #### Test Video: 
 [See on YouTube](https://youtu.be/QEIn0vujR9M)
 
-Thanks to [artarya](https://github.com/artarya)
+
+Thanks to [artarya](https://github.com/artarya) for improve htm file.
