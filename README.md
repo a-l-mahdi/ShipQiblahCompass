@@ -3,7 +3,7 @@
 
 By using this hardware you can give Gyro and GPS NMEA signals and caculate simultaneously qiblah direction and shows it on any client where connected to local network on ship.
 
-Hardware: Arduino UNO, RS422 To TTL Converter
+Hardware: Arduino UNO, Arduino Ethernet Shield, RS422 To TTL Converter
 ### Usage: 
 1. Copy htm file to ssd that inserted into arduino ethernet shield.
 2. Upload ino file to Arduino UNO.
