@@ -8,10 +8,10 @@ By using this hardware, you can receive Gyro and GPS NMEA signals and calculate 
 •  [Usage](#usage)
 
 •  [Screenshots](#screenshots)
+<!-- 
+•  [License](#license) -->
 
-•  [License](#license)
-
-•  [Contributing](#contributing)
+•  [Contributor](#contributor)
 
 •  [Contact](#contact)
 
@@ -45,7 +45,7 @@ When you open the app, you will see a Clock with on Hand that shows the Qiblah d
 •  Include some screenshots of your app to show how it looks like, such as
 
 ## Screenshots
-![Screenshot 1](screenshot.png)
+![Screenshot 1](https://github.com/a-l-mahdi/ShipQiblahCompass/blob/main/Screenshot.png)
 
 <!-- 
 ## License
