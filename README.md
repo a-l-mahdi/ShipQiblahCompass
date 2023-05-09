@@ -20,7 +20,7 @@ By using this hardware, you can receive Gyro and GPS NMEA signals and calculate 
 •  [Contact](#contact)
 
 
-## Required Hardware
+## Hardware
 Arduino UNO, Arduino Ethernet Shield, RS422 To TTL Converter
 
 
