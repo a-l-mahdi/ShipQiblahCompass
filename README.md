@@ -35,16 +35,13 @@ To install this app, you need to have Arduino IDE installed on your computer. Yo
 
 
 
-•  Provide examples of how to use your app, such as
-
 ## Usage
-When you open the app, you will see a Clock with on Hand that shows the Qiblah direction relative to Mecca bearing. You can also see the prayer times for your location.
+When you brows the IP of Arduino on your mobile phone or PC, you will see a Clock with on Hand that shows the Qiblah direction relative to Mecca bearing. You can also see the prayer times for your location.
 
 
 •  To change the prayer calculation method, tap on the drop down list and select a method from the list.
 
 
-•  Include some screenshots of your app to show how it looks like, such as
 
 ## Videos
 
