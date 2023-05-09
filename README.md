@@ -3,6 +3,8 @@
 By using this hardware, you can receive Gyro and GPS NMEA signals and calculate the qiblah direction simultaneously and show it on any client that is connected to the local network on the ship.
 
 ## Table of Contents
+•  [Required Hardware](#Hardware)
+
 •  [Installation](#installation)
 
 •  [Usage](#usage)
@@ -18,6 +20,10 @@ By using this hardware, you can receive Gyro and GPS NMEA signals and calculate 
 •  [Contact](#contact)
 
 
+## Required Hardware
+Arduino UNO, Arduino Ethernet Shield, RS422 To TTL Converter
+
+
 ## Installation
 To install this app, you need to have Arduino IDE installed on your computer. You also need Mentioned Hardware onboard.
 
@@ -26,6 +32,8 @@ To install this app, you need to have Arduino IDE installed on your computer. Yo
 •  Open the .ino file in Arduino IDE, set desire IP for Ethernet Shield and finally uploud .ino File into Arduino Board.
 
 •  Copy index.htm file into memroy SD card and insert to Ethernet Shield.
+
+•  Connect Gyro and GPS NMEA 0183 into Arduino Software Serial usind RS422 to TTL converter.
 
 •  Connect Ethernet Shield to onboard LAN network switch.
 
@@ -52,6 +60,7 @@ RAW htm version:
 Improved:
 [See on YouTube](https://youtu.be/D12Pzf8zaG0)
 [See on Aparat](https://aparat.com/v/12Vp5)
+
 
 ## Screenshots
 ![Screenshot 1](https://github.com/a-l-mahdi/ShipQiblahCompass/blob/main/Screenshot.png)
