@@ -1,5 +1,6 @@
-# Ship Qiblah Compass: An Arduino Project to Find the Qiblah Direction on a Ship.
+# Ship Qiblah Compass 
 
+##### An Arduino Project to Find the Qiblah Direction on a Ship.
 By using this hardware, you can receive Gyro and GPS NMEA signals and calculate the qiblah direction simultaneously and show it on any client that is connected to the local network on the ship.
 
 ## Table of Contents
