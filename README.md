@@ -4,7 +4,7 @@
 By using this hardware, you can receive Gyro and GPS NMEA signals and calculate the qiblah direction simultaneously and show it on any client that is connected to the local network on the ship.
 
 ## Table of Contents
-•  [Required Hardware](#Required-Hardware)
+•  [Required Hardware](#Required Hardware)
 
 •  [Installation](#installation)
 
@@ -21,7 +21,7 @@ By using this hardware, you can receive Gyro and GPS NMEA signals and calculate 
 •  [Contact](#contact)
 
 
-## Required-Hardware
+## Required Hardware
 Arduino UNO, Arduino Ethernet Shield, RS422 To TTL Converter
 
 
