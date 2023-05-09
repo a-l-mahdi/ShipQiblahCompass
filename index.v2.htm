@@ -1112,6 +1112,7 @@
         },
 
 
+
         // convert hours to day portions
         dayPortion: function (times) {
           for (var i in times)
@@ -1122,7 +1123,6 @@
 
         //---------------------- Time Zone Functions -----------------------
 
-
         // get local time zone
         getTimeZone: function (date) {
           var year = date[0];
@@ -1131,12 +1131,10 @@
           return Math.min(t1, t2);
         },
 
-
         // get daylight saving for a given date
         getDst: function (date) {
           return 1 * (this.gmtOffset(date) != this.getTimeZone(date));
         },
-
 
         // GMT offset for a given date
         gmtOffset: function (date) {
